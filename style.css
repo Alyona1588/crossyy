@@ -1,0 +1,223 @@
+/*подсветка*/ 
+
+/*
+.header, .header-logo, .footer, .footer-logo-social, .footer-podval, .footer-logo, .footer-social, .footer-social-link, .footer-kontent, .header-kontent, .main, .main-, .containers, .container {
+	border: 2px solid red;
+}
+
+
+*/
+
+/* Подключаем шрифты*/
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
+
+
+/* main css*/
+
+/* глобальные настройки*/
+* {
+  margin: 0px;
+ /*  padding: 0px; */
+}
+
+.body {
+  width: 1440px;
+  height: 1642px;
+  background: rgba(241, 241, 241, 1);
+}
+
+/* Начало header */
+.header {
+	box-sizing: border-box;
+	width: 100%;
+	height: 110px;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	background: rgba(255, 255, 255, 1);
+}
+.header-kontent {
+
+	width: 1140px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-social {
+	display:flex;
+	gap: 20px;
+	text-decoration: none;
+		
+}
+
+.header-social-link {
+	color: rgba(18, 23, 35, 1);
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 700;
+	Font-Size: 20px;
+	text-decoration: none;
+}
+
+.head-separator {
+width: 1440px;
+color: rgba(161, 166, 180, 1);
+height: 1px;
+
+}
+
+
+/* Начало основного контента main */
+ .main{
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  height: 1418px;
+  align-items: center;
+
+}
+
+.main-kontent{
+	width: 1140px;
+	height: 1418px;
+	display: flex;
+	flex-direction: column;
+ 	justify-content: space-around;
+	align-items: stretch;
+}
+
+.subtitle {
+font-family: 'Anonymous Pro', monospace;
+font-weight: 700;
+Font-Size: 48px;
+	
+}
+
+.containers {
+	display:flex;
+	flex-direction: row;
+	box-sizing:border-box;
+	justify-content: space-between;
+}
+
+.container {
+  width: 364px;
+  height: 396px;
+  box-sizing:border-box;
+  border-radius: 12px;
+	
+}
+
+.container__image {
+  width: 364px;
+  height: 254px;
+  
+
+}
+
+.card {
+	Box-sizing:border-box;
+	width: 364px;
+	height: 142px;
+	background: #FFFFFF;
+	flex-direction: column;
+ 	justify-content: space-around;
+	align-items: stretch;
+	padding-left: 32px;
+	padding-right: 24px;
+	padding-top: 32px;
+	padding-bottom: 24px;
+}
+
+
+.container__title {
+	font-family: 'Anonymous Pro', monospace;	
+	font-weight: 700;	
+	font-size: 26px;
+	text-align: left;
+	padding: 32px, 24px, 32px, 24px;
+
+
+
+
+}
+
+.container__text {
+	font-family: 'Anonymous Pro', monospace;	
+	font-size: 20px;
+	font-weight: 400;
+
+
+
+	
+}
+
+
+
+
+
+/* Начало футтера */
+.footer {
+	width: 100%;
+	height: 142px;
+	background: rgba(18, 23, 35, 1); 
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+.footer-kontent {
+	width: 1140px;
+	height: 142px;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.footer-logo-social {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.footer-social {
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+	
+	font-family: 'Anonymous Pro', monospace;	
+	font-size: 20px;
+	font-weight: 400;
+	
+}
+.footer-social-link {
+	color: rgba(255, 255, 255, 1); 
+	text-decoration: none;
+}
+
+.footer-social-punkt {
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+
+.footer-separator {
+  width: 1160px;
+  color: rgba(230, 232, 236, 0.4);
+	border: 1px solid ;
+box-sizing: border-box;
+  
+  
+
+}
+
+.footer-podval {
+	display:flex;
+	justify-content: center;
+	color: rgba(161, 166, 180, 1); 
+	font-family: 'Anonymous Pro', monospace;	
+	font-size: 20px;
+	font-weight: 400;
+
+}
+
