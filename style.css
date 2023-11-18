@@ -1,223 +1,437 @@
-/*подсветка*/ 
-
-/*
-.header, .header-logo, .footer, .footer-logo-social, .footer-podval, .footer-logo, .footer-social, .footer-social-link, .footer-kontent, .header-kontent, .main, .main-, .containers, .container {
+/* -------- Подсветка для кодинга -------- */
+/* --- БЛОКИ --- */
+/* 
+.header,
+.header-content,
+.footer,
+.footer-content,
+.main,
+.main-content-index,
+.containers,
+.subtitle,
+.container,
+.main-content-bigs {
 	border: 2px solid red;
-}
+} */
+
+/* --- ЭЛЕМЕНТЫ" --- */
+
+/* .header,
+.header-logo,
+.nav .footer,
+.footer-logo-social,
+.footer-podval,
+.footer-logo,
+.footer-social,
+.footer-social-link,
+.footer-content,
+.header-content,
+.main,
+.main-,
+.containers,
+.sneaker-big,
+.sneaker-big-img,
+.container {
+	border: 2px solid red;
+} */
 
 
-*/
+/* --- ФОН --- */
 
-/* Подключаем шрифты*/
+/* .body {
+	background: rgba(199, 190, 142, 1);
+} */
+
+
+
+/* ------------ Подключаем шрифты -----------*/
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
 
 
-/* main css*/
-
-/* глобальные настройки*/
+/* --------- Оформление по умолчанию --------*/
 * {
-  margin: 0px;
- /*  padding: 0px; */
+	margin: 0px;
+	font-weight: normal;
+	padding: 0px;
 }
+
+/* --- ФОН --- */
 
 .body {
-  width: 1440px;
-  height: 1642px;
-  background: rgba(241, 241, 241, 1);
+	background: rgba(241, 241, 241, 1);     
 }
 
-/* Начало header */
+
+/* --------------Начало HEADER ------------*/
+
 .header {
-	box-sizing: border-box;
-	width: 100%;
-	height: 110px;
-	display:flex;
-	justify-content: space-around;
-	align-items: center;
+	display: flex;
+	justify-content: center;
 	background: rgba(255, 255, 255, 1);
+	border-bottom: 1px solid rgba(103, 107, 115, 1);
+	margin-bottom: 10px;
 }
-.header-kontent {
 
-	width: 1140px;
-	display:flex;
+.header-content {
+	display: flex;
 	justify-content: space-between;
+	width: 1140px;
+	height: 100%;
 	align-items: center;
+	margin-top: 24px;
+	margin-bottom: 24px;
 }
+
 .header-social {
-	display:flex;
+	display: flex;
 	gap: 20px;
-	text-decoration: none;
-		
 }
 
 .header-social-link {
-	color: rgba(18, 23, 35, 1);
 	font-family: 'Anonymous Pro', monospace;
 	font-weight: 700;
 	Font-Size: 20px;
+}
+
+.header-social-link-link {
 	text-decoration: none;
+	color: rgba(18, 23, 35, 1);
 }
 
 .head-separator {
-width: 1440px;
-color: rgba(161, 166, 180, 1);
-height: 1px;
-
+	border: 1px solid;
+	color: rgba(161, 166, 180, 1);
 }
 
+/* --------------Конец HEADER -------------*/
 
-/* Начало основного контента main */
- .main{
-  display: flex;
-  flex-direction: column;
-  width: 1440px;
-  height: 1418px;
-  align-items: center;
 
+/* --------------Начало FOOTER ------------*/
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	background: rgba(18, 23, 35, 1);
 }
 
-.main-kontent{
-	width: 1140px;
-	height: 1418px;
+.footer-content {
 	display: flex;
 	flex-direction: column;
- 	justify-content: space-around;
-	align-items: stretch;
-}
-
-.subtitle {
-font-family: 'Anonymous Pro', monospace;
-font-weight: 700;
-Font-Size: 48px;
-	
-}
-
-.containers {
-	display:flex;
-	flex-direction: row;
-	box-sizing:border-box;
-	justify-content: space-between;
-}
-
-.container {
-  width: 364px;
-  height: 396px;
-  box-sizing:border-box;
-  border-radius: 12px;
-	
-}
-
-.container__image {
-  width: 364px;
-  height: 254px;
-  
-
-}
-
-.card {
-	Box-sizing:border-box;
-	width: 364px;
-	height: 142px;
-	background: #FFFFFF;
-	flex-direction: column;
- 	justify-content: space-around;
-	align-items: stretch;
-	padding-left: 32px;
-	padding-right: 24px;
-	padding-top: 32px;
-	padding-bottom: 24px;
-}
-
-
-.container__title {
-	font-family: 'Anonymous Pro', monospace;	
-	font-weight: 700;	
-	font-size: 26px;
-	text-align: left;
-	padding: 32px, 24px, 32px, 24px;
-
-
-
-
-}
-
-.container__text {
-	font-family: 'Anonymous Pro', monospace;	
-	font-size: 20px;
-	font-weight: 400;
-
-
-
-	
-}
-
-
-
-
-
-/* Начало футтера */
-.footer {
-	width: 100%;
-	height: 142px;
-	background: rgba(18, 23, 35, 1); 
-	display:flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-
-}
-.footer-kontent {
 	width: 1140px;
-	height: 142px;
-	display:flex;
-	flex-direction: column;
+	height: 151px;
 	justify-content: space-around;
+	margin: 0 auto;
 }
-.footer-logo-social {
-	display:flex;
-	flex-direction: row;
+
+.footer-up {
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
+	padding: 25px 0px;
+	border-bottom: 1px solid rgba(103, 107, 115, 1);
 }
+
 .footer-social {
-	display:flex;
-	justify-content: space-around;
-	align-items: center;
-	align-content: space-around;
-	
-	font-family: 'Anonymous Pro', monospace;	
-	font-size: 20px;
+	display: flex;
+	font-family: 'Anonymous Pro', monospace;
 	font-weight: 400;
-	
-}
-.footer-social-link {
-	color: rgba(255, 255, 255, 1); 
-	text-decoration: none;
+	font-size: 20px;
 }
 
 .footer-social-punkt {
-	padding-left: 5px;
+	list-style: none;
+	display: flex;
+	gap: 15px;
+}
+
+.footer-social-link {
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+}
+
+.footer-down {
+	display: flex;
+	justify-content: center;
+	color: rgba(161, 166, 180, 1);
+
+
+}
+
+/* --------------Конец FOOTER -------------*/
+
+
+/* ---------Начало ДЛЯ ВСЕХ *.HTML ---------*/
+/* ------ MAIN ------ */
+
+.main {
+	display: flex;
+	justify-content: center;
+
+}
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	width: 1140px;
+	gap: 32px;
+	margin: 32px 0;
+}
+
+
+
+/* -----------Начало INDEX.HTML -----------*/
+/* ------ MAIN ------ */
+
+
+
+.subtitle {
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 700;
+	Font-Size: 48px;
+}
+
+.containers {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	Box-sizing: border-box;
+	width: 364px;
+	height: auto;
+	background: #FFFFFF;
+	margin-bottom: 24px;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	border-radius: 0px 0px 12px 12px;
+	gap: 12px;
+}
+
+.container__image {
+	width: 364px;
+	height: 254px;
+	border-radius: 12px 12px 0px 0px;
+}
+
+.container__title {
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 700;
+	font-size: 26px;
+	text-align: left;
+	padding: 32px, 24px, 32px, 24px;
+}
+
+.container__text {
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+
+/* ----------Начало BIG-CROSS.HTML ----------*/
+/* ------ MAIN ------ */
+
+.main-content-big {
+	display: flex;
+	flex-direction: column;
+	border-radius: 50px;
+	background: #FFFFFF;
+}
+
+.sneaker-big {
+	display: flex;
+	justify-content: center;
+	border-radius: 50px 50px 0 0;
+}
+
+.sneaker-big-info {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	Box-sizing: border-box;
+	background: #FFFFFF;
+	justify-content: space-between;
+	align-items: stretch;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	border-radius: 0px 0px 12px 12px;
+}
+
+.sneaker-big-info-title {
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 48px;
+	text-align: left;
+}
+
+.sneaker-big-info-subtitle {
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 400;
+	font-size: 36px;
+	text-align: left;
+}
+
+.sneaker-big-info-additional-info-text {
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: left;
+}
+
+.sneaker-big-info-additional-info {
+	display: flex;
+	flex-direction: row;
+	gap: 32px;
+}
+
+.sneaker-big-info-additional-info-texts {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	gap: 24px;
+}
+
+.sneaker-big-info-additional-info-parameters {
+	width: 50%;
+}
+
+.parameters-header {
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: left;
+}
+
+.parameter-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.parameter-title,
+.parameter-value {
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.sneaker-big-info-additional-info-parameters {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.parameter-separator {
+	width: 100%;
+	border-top: 1px solid;
 	box-sizing: border-box;
 }
 
-.footer-separator {
-  width: 1160px;
-  color: rgba(230, 232, 236, 0.4);
-	border: 1px solid ;
-box-sizing: border-box;
-  
-  
 
+
+/* --------------- Анимация ---------------*/
+/* ------  INDEX.HTML ------ */
+
+.container:hover {
+	transform: translateY(-15px);
 }
 
-.footer-podval {
-	display:flex;
-	justify-content: center;
-	color: rgba(161, 166, 180, 1); 
-	font-family: 'Anonymous Pro', monospace;	
-	font-size: 20px;
-	font-weight: 400;
 
+
+/* ------ Адаптивный дизайн (до 375px) ------*/
+
+@media screen and (max-width: 375px) {
+
+	/* ---  HEADER И FOOTER --- */
+
+	.header {
+		margin-bottom: 0px;
+	}
+
+	.header-content,
+	.footer-up {
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	/* ------ ДЛЯ ВСЕХ *.HTML ------ */
+
+	.main-content {
+		align-items: center
+	}
+
+	/* ------  INDEX.HTML ------ */
+
+	.subtitle {
+		Font-Size: 32px;
+	}
+
+	.containers {
+		justify-content: center
+	}
+
+	.card,
+	.container__image,
+	.subtitle {
+		width: 343px;
+	}
+
+
+	/* ------  BIG-CROSS.HTML ------ */
+
+	.sneaker-big-info-additional-info {
+		flex-direction: column;
+	}
+
+	.main-content-big,
+	.sneaker-big,
+	.sneaker-big-img {
+		width: 343px;
+		border-radius: 12px;
+	}
+
+	.sneaker-big-info,
+	.sneaker-big-info-title,
+	.sneaker-big-info-subtitle,
+	.sneaker-big-info-additional-info-texts,
+	.sneaker-big-info-additional-info-parameters {
+		width: 295px;
+	}
+
+	.sneaker-big-info-title {
+		font-size: 32px;
+		line-height: 32px;
+	}
+
+	.sneaker-big-info-subtitle {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	.sneaker-big-info-additional-info-text {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.parameters-header {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	.parameter-title,
+	.parameter-value {
+		font-size: 16px;
+		line-height: 16px;
+	}
 }
-
