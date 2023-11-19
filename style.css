@@ -58,7 +58,7 @@
 /* --- ФОН --- */
 
 .body {
-	background: rgba(241, 241, 241, 1);     
+	background: rgba(241, 241, 241, 1);
 }
 
 
@@ -153,8 +153,9 @@
 	display: flex;
 	justify-content: center;
 	color: rgba(161, 166, 180, 1);
-
-
+	font-family: Anonymous Pro;
+	font-size: 16px;
+	font-weight: 700;
 }
 
 /* --------------Конец FOOTER -------------*/
