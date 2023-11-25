@@ -206,6 +206,7 @@
 .container {
 	text-decoration: none;
 	color: rgba(18, 23, 35, 1);
+	/* background: #FFFFFF; */
 }
 
 .card {
