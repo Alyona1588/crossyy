@@ -203,6 +203,11 @@
 	justify-content: space-between;
 }
 
+.container {
+	text-decoration: none;
+	color: rgba(18, 23, 35, 1);
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
@@ -223,6 +228,8 @@
 	width: 364px;
 	height: 254px;
 	border-radius: 12px 12px 0px 0px;
+	text-decoration: none;
+
 }
 
 .container__title {
