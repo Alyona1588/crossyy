@@ -365,6 +365,66 @@
 
 
 
+/* ------ Адаптивный дизайн (до 1024px) ------*/
+
+@media screen and (max-width: 1024px) {
+
+	
+	/* ------ ДЛЯ ВСЕХ *.HTML ------ */
+	
+	.main-content, .header-content, .footer-content, .sneaker-big-img {
+		width: 960px;
+	}
+	
+
+	/* ------  INDEX.HTML ------ */
+
+	.card,
+	.container__image {
+		width: 304px;
+		height: auto;
+	}
+		 
+}
+
+/* ------ Адаптивный дизайн (до 768px) ------*/
+
+@media screen and (max-width: 768px) {
+
+	
+	/* ------ ДЛЯ ВСЕХ *.HTML ------ */
+	
+	.main-content, .header-content, .footer-content, .sneaker-big-img {
+		width: 720px;
+	}
+	
+	/* ------  INDEX.HTML ------ */
+
+	.card,
+	.container__image {
+		width: 348px;
+		height: auto;
+	}
+
+	.subtitle {
+		Font-Size: 42px;
+}
+
+/* ------  BIG-CROSS.HTML ------ */
+
+.sneaker-big-info-additional-info {
+	flex-direction: column;
+}
+
+.sneaker-big-info-additional-info-texts, .sneaker-big-info-additional-info-parameters  {
+	width: 100%;
+}
+
+
+
+
+
+
 /* ------ Адаптивный дизайн (до 375px) ------*/
 
 @media screen and (max-width: 375px) {
